@@ -14,4 +14,143 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Message.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SliceMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTransferManagement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommunicationNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SendQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultChannel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Receiver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DelieveQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReceiveQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageCheck.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sub_processManagement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessManagement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultProtocol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="V2XCommunication.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultCrowd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTransferManagement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SliceMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommunicationNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SendQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultChannel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Receiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DelieveQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceiveQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageCheck.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="constUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sub_processManagement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessManagement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="V2XCommunication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultProtocolFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Channel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultChannelFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Crowd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultCrowd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrowdFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultCrowdFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

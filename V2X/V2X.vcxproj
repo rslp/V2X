@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -21,32 +21,32 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{747BECEA-5A3D-4654-ADEB-063F58B09D92}</ProjectGuid>
     <RootNamespace>V2X</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -110,6 +110,53 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Channel.h" />
+    <ClInclude Include="ChannelFactory.h" />
+    <ClInclude Include="constUtil.h" />
+    <ClInclude Include="Crowd.h" />
+    <ClInclude Include="CrowdFactory.h" />
+    <ClInclude Include="DefaultCrowd.h" />
+    <ClInclude Include="DefaultChannelFactory.h" />
+    <ClInclude Include="DefaultCrowdFactory.h" />
+    <ClInclude Include="ProtocolFactory.h" />
+    <ClInclude Include="DefaultProtocolFactory.h" />
+    <ClInclude Include="MessageCheck.h" />
+    <ClInclude Include="DefaultChannel.h" />
+    <ClInclude Include="CommunicationNode.h" />
+    <ClInclude Include="DelieveQueue.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageTransferManagement.h" />
+    <ClInclude Include="ProcessManagement.h" />
+    <ClInclude Include="DefaultProtocol.h" />
+    <ClInclude Include="Protocol.h" />
+    <ClInclude Include="ReceiveQueue.h" />
+    <ClInclude Include="Receiver.h" />
+    <ClInclude Include="Sender.h" />
+    <ClInclude Include="SendQueue.h" />
+    <ClInclude Include="SliceMessage.h" />
+    <ClInclude Include="Sub_processManagement.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="V2XCommunication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommunicationNode.cpp" />
+    <ClCompile Include="DefaultCrowd.cpp" />
+    <ClCompile Include="DefaultChannel.cpp" />
+    <ClCompile Include="DelieveQueue.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="MessageCheck.cpp" />
+    <ClCompile Include="MessageTransferManagement.cpp" />
+    <ClCompile Include="ProcessManagement.cpp" />
+    <ClCompile Include="DefaultProtocol.cpp" />
+    <ClCompile Include="ReceiveQueue.cpp" />
+    <ClCompile Include="Receiver.cpp" />
+    <ClCompile Include="Sender.cpp" />
+    <ClCompile Include="SendQueue.cpp" />
+    <ClCompile Include="SliceMessage.cpp" />
+    <ClCompile Include="Sub_processManagement.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="V2XCommunication.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
