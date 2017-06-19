@@ -11,6 +11,7 @@
 #include "DefaultCrowd.h"
 #include "CrowdFactory.h"
 #include "DefaultCrowdFactory.h"
+#include <sstream>
 
 std::string V2XCommunication()
 {
@@ -35,40 +36,21 @@ std::string V2XCommunication()
 	process.startSimulation(*comNode, *protocol, *channel, *crowd);
 
 	//将模拟之后的结果保存
+	stringstream ss;
 	string res = "";
 	list<CommunicationNode>::iterator iter;
+	bool flag = true;
+	ss << "\"CommunicationNode\": " << "[";
 	for (iter = (*comNode).begin(); iter != (*comNode).end(); iter++)
 	{
-		list<Message> recvList = *(*iter).getMessageToRecv();
-		if (recvList.size() == 0) {
-			continue;
+		if (flag == true) {
+			ss << communicationToJson(*iter);
+			flag = false;
 		}
 		else {
-			if (iter == (*comNode).begin()) {
-				res += "{\"CommunicationNode:\": [{\"ID\":";
-			}
-			else {
-				res += ", {\"ID\":"; //通信节点ID
-			}
-				res += (*iter).getNodeID();
-				res += ",";
-				res += "\"ReceiveMessage\": [ ";
-				//通信节点收到的消息
-				list<Message>::iterator msgIter;
-				for (msgIter = recvList.begin(); msgIter != recvList.end(); msgIter++) {
-
-					if (msgIter != recvList.begin()) {
-						res += ",";
-					}
-					res += "{\"MessageID\":";
-					res += (*msgIter).getMessageID();
-					res += ", \"sendID\": ";
-					res += (*msgIter).getSourceAddress();
-					res += ", \"size\": ";
-					res += (*msgIter).getSize();
-				}
-				res += "]}";
+			ss << ", " << communicationToJson(*iter);
 		}
 	}
+	ss >> res;
 	return res;
 }
