@@ -44,11 +44,11 @@ std::string V2XCommunication()
 	for (iter = (*comNode).begin(); iter != (*comNode).end(); iter++)
 	{
 		if (flag == true) {
-			ss << communicationToJson(*iter);
+			ss << (*iter).toJson();
 			flag = false;
 		}
 		else {
-			ss << ", " << communicationToJson(*iter);
+			ss << ", " << (*iter).toJson();
 		}
 	}
 	ss << "]}";
