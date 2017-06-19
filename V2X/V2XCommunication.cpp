@@ -35,7 +35,7 @@ std::string V2XCommunication()
 	ProcessManagement process;
 	process.startSimulation(*comNode, *protocol, *channel, *crowd);
 
-	//将模拟之后的结果保存
+	//将模拟之后的结果保存成json串
 	stringstream ss;
 	string res = "";
 	list<CommunicationNode>::iterator iter;
@@ -51,6 +51,7 @@ std::string V2XCommunication()
 			ss << ", " << communicationToJson(*iter);
 		}
 	}
+	ss << "]}";
 	ss >> res;
 	return res;
 }
