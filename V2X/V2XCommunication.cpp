@@ -43,13 +43,15 @@ std::string V2XCommunication()
 	ss << "\"CommunicationNode\": " << "[";
 	for (iter = (*comNode).begin(); iter != (*comNode).end(); iter++)
 	{
-		if (flag == true) {
-			ss << (*iter).toJson();
-			flag = false;
-		}
-		else {
-			ss << ", " << (*iter).toJson();
-		}
+		if ((*iter).isFinished() == true) {//若该节点有消息要接收 并且消息中有传输完成的 则输出json串
+			if (flag == true) {
+				ss << (*iter).toJson();
+				flag = false;
+			}
+			else {
+				ss << ", " << (*iter).toJson();
+			}
+		}		
 	}
 	ss << "]}";
 	ss >> res;
